@@ -1,10 +1,14 @@
-.carousel {
-    outline: none;
+
+
+.carousel:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 6px;
+    border-radius: var(--radius-lg);
 }
 
 .carousel-track-wrapper {
     overflow: hidden;
-    border-radius: var(--radius);
+    border-radius: var(--radius-lg);
 }
 
 .carousel-track {
@@ -13,8 +17,22 @@
 }
 
 .carousel-track .empresa {
-    flex: 0 0 auto;
+    flex: 0 0 100%;
+    min-width: 0;
     margin-bottom: 0;
+}
+
+.carousel .empresa {
+    background: var(--white);
+    border-left-width: 6px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    padding: 32px;
+}
+
+.carousel .empresa > span.empresa-titulo {
+    justify-self: end;
+    text-align: right;
 }
 
 .carousel-controls {
@@ -22,7 +40,7 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 .carousel-btn {
@@ -31,6 +49,7 @@
     justify-content: center;
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
     border: 2px solid var(--gray-light);
     border-radius: 50%;
     background: transparent;
@@ -40,11 +59,22 @@
                 color var(--transition), transform var(--transition);
 }
 
+.carousel-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
 .carousel-btn:hover {
     background: var(--brand);
     border-color: var(--brand);
     color: var(--white);
     transform: scale(1.08);
+}
+
+.carousel-btn:focus-visible,
+.carousel-dot:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
 }
 
 .carousel-dots {
@@ -64,9 +94,31 @@
     transition: background var(--transition), transform var(--transition), width var(--transition);
 }
 
+.carousel-dot:hover {
+    background: var(--gray-mid);
+}
+
 .carousel-dot.active {
     background: var(--brand);
     width: 24px;
     border-radius: 4px;
     transform: none;
+}
+
+@media (max-width: 800px) {
+    .carousel .empresa {
+        padding: 24px 20px;
+        border-left-width: 4px;
+    }
+
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel-track {
+        transition-duration: 0.01ms;
+    }
 }

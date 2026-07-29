@@ -12,6 +12,8 @@
     --white: #ffffff;
     --black: #000000;
     --radius: 8px;
+    --radius-lg: 24px;
+    --shadow-soft: 0 12px 32px rgba(20, 20, 20, 0.08);
     --transition: 0.25s ease;
 }
 
@@ -44,6 +46,28 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 20px;
+    background: var(--brand);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: var(--radius);
+    font-weight: 700;
+    z-index: 1000;
+    transition: top var(--transition);
+}
+
+.skip-link:focus {
+    top: 20px;
 }
 
 .subtitulo {

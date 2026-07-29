@@ -6,17 +6,24 @@
         <title>Alexandre Júnior - Desenvolvedor e Designer</title>
         <meta name="description" content="Desenvolvedor Front End e UX/UI Designer, localizado em Guaratinguetá">
 
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Alexandre Júnior - Desenvolvedor e Designer">
+        <meta property="og:description" content="Desenvolvedor Front End e UX/UI Designer, localizado em Guaratinguetá">
+        <meta property="og:image" content="./img/perfil.svg">
+        <meta property="og:locale" content="pt_BR">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="icon" href="./cruz.svg" type="image/svg+xml">
+        <link rel="icon" href="./img/cruz.svg" type="image/svg+xml">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
 
      <body>
+        <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
         <header class="header">
-            <div class="header-inner">
+            <div class="header-inner container">
                 <img src="./img/Marca.svg" alt="Marca">
                 <nav>
                     <ul class="header-menu">
@@ -28,55 +35,95 @@
             </div>
         </header>
 
-        <main class="introducao">
-            <div class="parallax-wrapper">
-                <img class="parallax-img" src="./img/perfil.svg" alt="Foto de Perfil" width="300" height="412">
+        <main id="conteudo">
+            <div class="introducao container">
+                <div class="parallax-wrapper">
+                    <img class="parallax-img" src="./img/perfil.svg" alt="Foto de Perfil" width="300" height="412">
+                </div>
+                <div class="introducao-texto">
+                    <h1>Desenvolvedor<br> Front End &<br> UX/UI Designer</h1>
+                    <p>Localizado em Guaratinguetá/SP</p>
+                </div>
             </div>
-            <div>
-                <h1>Desenvolvedor<br> Front End &<br> UX/UI Designer</h1>
-                <p>Localizado em Guaratinguetá/SP</p>
-            </div>
-        </main>
 
-        <section class="experiencia" id="experiencia" aria-label="Experiência">
+            <div class="marquee" aria-hidden="true">
+                <div class="marquee-track">
+                    <span>JavaScript</span>
+                    <span>UX/UI Design</span>
+                    <span>Flexbox &amp; Grid</span>
+                    <span>Responsividade</span>
+                    <span>Semântica</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Astro</span>
+                    <span>TypeScript</span>
+                    <span>JavaScript</span>
+                    <span>UX/UI Design</span>
+                    <span>Flexbox &amp; Grid</span>
+                    <span>Responsividade</span>
+                    <span>Semântica</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Astro</span>
+                    <span>TypeScript</span>
+                </div>
+            </div>
+
+        <section class="experiencia container" id="experiencia" aria-label="Experiência">
             <h2 class="subtitulo">Experiência</h2>
             <div>
                 <p class="experiencia-texto">Desenvolvo pequenos projetos utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
 
-                <div class="empresa">
-                    <span class="empresa-mes">Fevereiro</span>
-                    <h3 class="empresa-titulo">CV Digital</h3>
-                    <span class="empresa-titulo">Projeto</span>
-                    <p class="empresa-texto">Desenvolvi um currículo digital responsivo utilizando HTML e CSS, com foco em organização de conteúdo, semântica e boa experiência do usuário. O projeto foi estruturado para apresentar informações profissionais de forma clara e objetiva.</p>
-                    <ul class="empresa-habilidades">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Responsividade</li>
-                        <li>UX/UI Design</li>
-                        <li>Semântica</li>
-                    </ul>
-                </div>
+                <div class="carousel" tabindex="0" role="region" aria-roledescription="carrossel" aria-label="Projetos">
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track">
+                            <div class="empresa">
+                                <span class="empresa-mes">Fevereiro</span>
+                                <h3 class="empresa-titulo">CV Digital</h3>
+                                <span class="empresa-titulo">Projeto</span>
+                                <p class="empresa-texto">Desenvolvi um currículo digital responsivo utilizando HTML e CSS, com foco em organização de conteúdo, semântica e boa experiência do usuário. O projeto foi estruturado para apresentar informações profissionais de forma clara e objetiva.</p>
+                                <ul class="empresa-habilidades">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Responsividade</li>
+                                    <li>UX/UI Design</li>
+                                    <li>Semântica</li>
+                                </ul>
+                            </div>
 
-                <div class="empresa">
-                    <span class="empresa-mes">Março</span>
-                    <h3 class="empresa-titulo">Bikcraft</h3>
-                    <span class="empresa-titulo">Projeto</span>
-                    <p class="empresa-texto">Desenvolvi um site institucional completo para a Bikcraft, aplicando conceitos de HTML semântico, CSS moderno e JavaScript para interações. O projeto foi focado em responsividade, organização de layout e boas práticas de desenvolvimento front-end.</p>
-                    <ul class="empresa-habilidades">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Responsividade</li>
-                        <li>UX/UI Design</li>
-                        <li>Flexbox & Grid</li>
-                    </ul>
+                            <div class="empresa">
+                                <span class="empresa-mes">Março</span>
+                                <h3 class="empresa-titulo">Bikcraft</h3>
+                                <span class="empresa-titulo">Projeto</span>
+                                <p class="empresa-texto">Desenvolvi um site institucional completo para a Bikcraft, aplicando conceitos de HTML semântico, CSS moderno e JavaScript para interações. O projeto foi focado em responsividade, organização de layout e boas práticas de desenvolvimento front-end.</p>
+                                <ul class="empresa-habilidades">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Responsividade</li>
+                                    <li>UX/UI Design</li>
+                                    <li>Flexbox & Grid</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button type="button" class="carousel-btn carousel-prev" aria-label="Projeto anterior">
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="carousel-dots" role="tablist" aria-label="Selecionar projeto"></div>
+                        <button type="button" class="carousel-btn carousel-next" aria-label="Próximo projeto">
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                    </div>
                 </div>
 
             </div>
         </section>
 
         <section class="formacao" id="formacao" aria-label="Formação">
-            <div class="formacao-container">
+            <div class="formacao-container container">
                 <h2 class="subtitulo">Formação</h2>
 
                 <div>
@@ -117,9 +164,10 @@
                 </div>
             </div>
         </section>
+        </main>
 
         <footer class="footer" id="contato">
-            <div class="footer-container">
+            <div class="footer-container container">
                 <p class="footer-texto">Estou disponível para novos projetos no momento.
                     Entre em contato comigo e marcamos uma conversa</p>
                     <ul class="footer-contato">
@@ -127,9 +175,10 @@
                         <li><a href="tel:+5512978145247">+55 12 97814-5247</a></li>
                         <li><a href="https://www.instagram.com/ale.drj_/" target="_blank" rel="noopener noreferrer">@ale.drj</a></li>
                     </ul>
-                    <p class="footer-copy">Alexadre Júnior &copy; 2026.</p>
+                    <p class="footer-copy">Alexandre Júnior &copy; 2026.</p>
             </div>
         </footer>
+        <script src="js/carrossel.js" defer></script>
         <script src="js/main.js" defer></script>
     </body>
 </html>

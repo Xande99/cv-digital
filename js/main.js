@@ -1,6 +1,6 @@
 const parallaxWrapper = document.querySelector('.parallax-wrapper');
 const parallaxImg = document.querySelector('.parallax-img');
-const heroText = document.querySelector('.introducao > div');
+const heroText = document.querySelector('.introducao-texto');
 
 parallaxWrapper?.classList.add('hero-enter', 'hero-enter--img');
 heroText?.classList.add('hero-enter', 'hero-enter--text');
